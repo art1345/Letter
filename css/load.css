@@ -1,0 +1,38 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+} 
+
+main {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-areas: "one two three";
+  place-items: center; /* centers both horizontally and vertically */
+  gap: 1rem;
+  height: 100vh;
+}
+
+img {
+  padding-top: 5%;
+  max-width: 100%;
+}
+
+#git {
+  grid-area: one;
+}
+
+#bash {
+  grid-area: two;
+  max-width: 900%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#github {
+  grid-area: three;
+}
